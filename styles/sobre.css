@@ -1,0 +1,85 @@
+:root{
+    --color-black: #111111;
+    --color-text: #444444;
+}
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+/*========== Header ==========*/
+header{
+    max-width:90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 40px auto;
+}
+header .logo{
+    margin-right: 122px;
+}
+header .links ul{
+    display: flex;
+    list-style: none;
+}
+header .links ul li{
+    margin: 0 15px;
+}
+header .links ul li a{
+    color: var(--color-black)
+}
+main{
+    max-width: 90%;
+    margin: 30px auto;
+}
+
+/*========== Texto Principal ==========*/
+section.sobre .content{
+    margin-top: 30px;
+}
+section.sobre .content h2{
+    font-size: 24px;
+    color: var(--color-black);
+}
+section.sobre .content p{
+    margin-top: 20px;
+    font-size: 18px;
+    color: var(--color-text);
+    line-height: 28px;
+}
+
+
+
+/* ========== Footer ==========*/
+
+footer{
+    background: #EEEEEE;
+    padding: 23px 0;
+}
+footer p{
+    text-align: center;
+    font-size: 14px;
+    color: #999999;
+}
+
+@media (max-width: 576px) { 
+    header .logo{
+        margin-right: 20px;
+    }
+}
+
+
+@media (min-width: 768px) {  }
+
+
+@media (min-width: 992px) {  }
+
+
+@media (min-width: 1200px) {  }

@@ -1,0 +1,147 @@
+:root{
+    --color-black: #111111;
+}
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+/*========== Header ==========*/
+header{
+    max-width:90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 40px auto;
+}
+header .logo{
+    margin-right: 122px;
+}
+header .links ul{
+    display: flex;
+    list-style: none;
+}
+header .links ul li{
+    margin: 0 15px;
+}
+header .links ul li a{
+    color: var(--color-black)
+}
+main{
+    max-width: 90%;
+    margin: 30px auto;
+}
+
+/*========== Banner Principal ==========*/
+section.header{
+    background: #FBDFDB;
+    background-position: right;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+section.header .image{
+    padding: 66px 100px 0 248px;
+    float: right;
+}
+section.header .image img{
+    max-width: 100%;
+    height: auto;
+}
+section.header .content{
+    max-width: 400px;
+    width: 100%;
+    padding-left: 60px ;
+}
+section.header .content h2{
+    font-size: 32px;
+    color: var(--color-black);
+}
+section.header .content p{
+    opacity: 0.7;
+    font-size: 18px;
+    color: var(--color-black);
+    line-height: 28px;
+}
+
+/* ========== Mais acessadas ==========*/
+
+section.mais-acessadas{
+    margin-top: 50px;
+}
+section.mais-acessadas h2{
+    font-size: 24px;
+    color: var(--color-black)
+}
+section.mais-acessadas .receitas{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+section.mais-acessadas .receitas .box img{
+    max-width: 100%;
+    border-radius: 15px;
+}
+section.mais-acessadas .receitas .box h4{
+    font-size: 18px;
+}
+section.mais-acessadas .receitas .box p{
+    font-size: 14px;
+    color: #777777;
+}
+
+/* ========== Footer ==========*/
+
+footer{
+    background: #EEEEEE;
+    padding: 23px 0;
+}
+footer p{
+    text-align: center;
+    font-size: 14px;
+    color: #999999;
+}
+
+@media (max-width: 576px) { 
+    header .logo{
+        margin-right: 20px;
+    }
+    section.header{
+        padding: 10px;
+    }
+    section.header .content{
+        padding: 0
+    }
+    section.header .content h2{
+        font-size: 20px;
+    }
+    section.header .content p{
+        margin-top: 10px;
+        line-height: normal;
+        font-size: 14px;
+    }
+    section.header .image{
+        padding: 0;
+    }
+    section.mais-acessadas .receitas{
+        grid-template-columns: 1fr;
+    }
+ }
+
+
+@media (min-width: 768px) {  }
+
+
+@media (min-width: 992px) {  }
+
+
+@media (min-width: 1200px) {  }
